@@ -32,11 +32,11 @@ function Login({ history }) {
       <form onSubmit={handleSubmit} className="form" >
         <label className="username">
           userName:
-          <input value={userName} onChange={handleUsername} />
+          <input type = "text" value={userName} onChange={handleUsername} />
         </label>
         <label className="password">
           password:
-          <input value={password} onChange={handlePassword} />
+          <input type ="password" value={password} onChange={handlePassword} />
         </label>
         <button className ="btn-group" type="submit">Log in</button>
       </form>

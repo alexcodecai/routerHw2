@@ -24,13 +24,15 @@ function UserDetail({ match, history }) {
   };
 
   return (
-    <div>
-      <div>{detail.login ? detail.login : "No Name "}</div>
-      <div>{detail.location ? detail.location : "NO LOCATION "}</div>
-      <div>{detail.following ? detail.following : "No following "}</div>
-      <div>{detail.followers ? detail.followers : "No followers "}</div>
-      <button onClick={() => history.push("/users")}>back to user </button>
-      <button onClick={() => history.push("/")}>home</button>
+    <div >
+      <div className="box">
+        <div>{detail.login ? detail.login : "No Name "}</div>
+        <div>{detail.location ? detail.location : "NO LOCATION "}</div>
+        <div>{detail.following ? detail.following : "No following "}</div>
+        <div>{detail.followers ? detail.followers : "No followers "}</div>
+        
+      </div><button className="btn-detail" onClick={() => history.push("/users")}>back to user </button>
+        <button className="btn-detail" onClick={() => history.push("/")}>home</button>
     </div>
   );
 }
